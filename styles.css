@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'DM Serif Display', serif;
+    --red: 	#ED1C24;
+    --white: #FFFFFF;
+    --blue: #241D4F;
+    --black: #221f1fb0;
+}
+
+header, section, footer, nav, figure{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image{
+    height: 100%;
+    width: 100%;
+    background-image: url("smallbg.webp");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*HEADER*/
+.header-area{
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-img, figure, img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 3px 0 3px 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: var(--red);
+    text-transform: uppercase;
+}
+
+
+
+/*MAIN*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-btn{
+    border: 1px solid var(--black);
+    margin-top: 150px;
+    background-color: var(--red);
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px var(--black);
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 3rem;
+}
+
+a:link{
+    color: var(--white);
+    text-decoration: none;
+}
+a:visited{
+    color: var(--blue);
+}
+a:hover{
+    color: var(--black);
+    font-style: italic;
+}
+
+.main-text{
+    margin: 50px 0 50px 0;
+    height: auto;
+    width: 80vw;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+h2{
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 5rem;
+    letter-spacing: 1.8px;
+}
+
+.main-text p{
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.main-content{
+    margin: 150px 0 50px 0;
+    height: auto;
+    width: 80vw;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.main-content p{
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.bbq{
+    display: flex;
+    justify-content: center;
+}
+
+.bbq img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.store, figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store img{
+    border-radius: 10px;
+    width: 200px;
+    max-width: 400px;
+}
+
+.back-btn{
+    border: 1px solid var(--black);
+    margin: 10px 0 50px 0;
+    background-color: var(--red);
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px var(--black);
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 3rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+.menu li {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.food-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem 0 2rem 0;
+}
+.contact img {
+    width: 80%;
+}
+
+.contact a:link{
+    color: var(--red);
+}
+.contact a:visited{
+    color: var(--red);
+}
+.contact a:active{
+    color: var(--blue);
+}
